@@ -1,16 +1,18 @@
 <div align="center">
 
-# SegVLM 🎯
+# SegVLM: Deformable Attentive Visual Enhancement for Referring Image Segmentation Using Vision-Language Model
 
-**Alaa S. Dalaq, Muzammil Behzad**
+[Alaa S. Dalaq](https://scholar.google.com/citations?user=0qOTVbcAAAAJ&hl=en)<sup>1</sup> and [Muzammil Behzad](https://scholar.google.com.pk/citations?user=nrZ-GGcAAAAJ&hl=en)<sup>1,2</sup>
 
-King Fahd University of Petroleum and Minerals · SDAIA-KFUPM Joint Research Center for Artificial Intelligence
+<sup>1</sup>KFUPM &nbsp;&nbsp; <sup>2</sup>SDAIA-KFUPM Joint Research Center for Artificial Intelligence
+
+\*Corresponding email: muzammil.behzad@kfupm.edu.sa
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717.svg?logo=github)](https://github.com/BRAIN-Lab-AI/SegVLM)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.19242-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2505.19242)
 [![Python](https://img.shields.io/badge/Python-3.9-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Task](https://img.shields.io/badge/Task-Referring_Segmentation-blueviolet.svg)](#)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
@@ -205,13 +207,16 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Citation
 
-If you find SegVLM helpful for your research, please cite our paper:
+If you find SegVLM useful for your research, please cite our paper:
 
 ```bibtex
-@article{dalaq2026segvlm,
-  title={SegVLM: Deformable Attentive Visual Enhancement for Referring Image Segmentation Using Vision-Language Model},
-  author={Dalaq, Alaa S. and Behzad, Muzammil},
-  year={2026}
+@article{dalaq2025segvlm,
+  title   = {Deformable Attentive Visual Enhancement for Referring Segmentation
+             Using Vision-Language Model},
+  author  = {Dalaq, Alaa S. and Behzad, Muzammil},
+  journal = {arXiv preprint arXiv:2505.19242},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2505.19242}
 }
 ```
 
