@@ -66,7 +66,7 @@ class segvlm(nn.Module):
             # BCE Loss
             loss_bce = F.binary_cross_entropy_with_logits(pred, mask)
 
-            # Adaptive Dice Loss (Eq. 6-7): alpha_i = |p_i - y_i|
+            # Adaptive Dice Loss 
             probs = torch.sigmoid(pred)
             w = torch.abs(probs - mask).detach()
             inter = (w * probs * mask).sum(dim=(2, 3))
