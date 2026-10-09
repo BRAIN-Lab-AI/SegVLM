@@ -1,8 +1,8 @@
-from .segmenter import CRIS
+from .segmenter import segvlm
 from loguru import logger
 
 # def build_segmenter(args):
-#     model = CRIS(args)
+#     model = segvlm(args)
 #     backbone = []
 #     backbone_no_decay = []
 #     head = []
@@ -30,7 +30,7 @@ from loguru import logger
 
 
 def build_segmenter(args):
-    model = CRIS(args)
+    model = segvlm(args)
     backbone = []
     head = []
     for k, v in model.named_parameters():

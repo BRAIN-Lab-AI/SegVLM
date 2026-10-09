@@ -15,7 +15,8 @@ class segvlm(nn.Module):
                                     map_location="cpu").eval()
         self.backbone = build_model(clip_model.state_dict(), cfg.word_len).float()
         # Multi-Modal FPN (with dropout for regularization)
-        self.neck = FPN(in_channels=cfg.fpn_in, out_channels=cfg.fpn_out, dropout=cfg.dropout)
+                # Multi-Modal FPN
+        self.neck = FPN(in_channels=cfg.fpn_in, out_channels=cfg.fpn_out)
         # Decoder
         self.decoder = TransformerDecoder(num_layers=cfg.num_layers,
                                           d_model=cfg.vis_dim,
@@ -61,23 +62,24 @@ class segvlm(nn.Module):
             lambda1 = 0.2  # Adaptive Dice Loss
             lambda2 = 0.6  # Focal Loss
             lambda3 = 0.2  # BCE Loss
-            
+
             # BCE Loss
             loss_bce = F.binary_cross_entropy_with_logits(pred, mask)
-            
-            # Adaptive Dice Loss
+
+            # Adaptive Dice Loss (Eq. 6-7): alpha_i = |p_i - y_i|
             probs = torch.sigmoid(pred)
-            inter = (probs * mask).sum(dim=(2, 3))
-            union = (probs + mask - probs * mask).sum(dim=(2, 3))
-            loss_dice = 1 - (inter + 1e-6) / (union + 1e-6)
+            w = torch.abs(probs - mask).detach()
+            inter = (w * probs * mask).sum(dim=(2, 3))
+            denom = (w * probs).sum(dim=(2, 3)) + (w * mask).sum(dim=(2, 3))
+            loss_dice = 1 - (2 * inter + 1e-6) / (denom + 1e-6)
             loss_dice = loss_dice.mean()
-            
+
             # Focal Loss
             pt = probs * mask + (1 - probs) * (1 - mask)
             alpha = 0.25
             gamma = 2.0
             loss_focal = -(alpha * (1 - pt) ** gamma * torch.log(pt + 1e-6)).mean()
-            
+
             # Combined weighted loss
             loss = lambda1 * loss_dice + lambda2 * loss_focal + lambda3 * loss_bce
             
