@@ -12,11 +12,11 @@
 
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github)](https://github.com/BRAIN-Lab-AI/SegVLM)
 [![Project Page](https://img.shields.io/badge/Project-Page-1F6FEB)](https://brain-lab-ai.github.io/SegVLM/)
-[![Paper](https://img.shields.io/badge/Paper-Neural%20Networks%202026-6F42C1)](https://doi.org/10.1016/j.neunet.2026.109721)
 [![arXiv](https://img.shields.io/badge/arXiv-2505.19242-B31B1B?logo=arxiv)](https://arxiv.org/abs/2505.19242)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-FFC83D)](https://huggingface.co/papers/2505.19242)
 [![Python](https://img.shields.io/badge/python-3.9-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
+[![Paper](https://img.shields.io/badge/Paper-Neural%20Networks%202026-6F42C1)](https://doi.org/10.1016/j.neunet.2026.109721)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F)](https://opensource.org/licenses/MIT)
 [![Stars](https://img.shields.io/github/stars/BRAIN-Lab-AI/SegVLM?style=social)](https://github.com/BRAIN-Lab-AI/SegVLM)
 
