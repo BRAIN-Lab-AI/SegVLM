@@ -2,17 +2,22 @@
 
 # SegVLM: Deformable Attentive Visual Enhancement for Referring Image Segmentation Using Vision-Language Model
 
-[Alaa S. Dalaq](https://scholar.google.com/citations?user=0qOTVbcAAAAJ&hl=en)<sup>1</sup> and [Muzammil Behzad](https://scholar.google.com.pk/citations?user=nrZ-GGcAAAAJ&hl=en)<sup>1,2,*</sup>
+[Alaa Dalaq](https://scholar.google.com/citations?user=0qOTVbcAAAAJ&hl=en)<sup>1</sup> and [Muzammil Behzad](https://scholar.google.com.pk/citations?user=nrZ-GGcAAAAJ&hl=en)<sup>1,2,*</sup>
 
 <sup>1</sup>King Fahd University of Petroleum and Minerals, Saudi Arabia <br> &nbsp;&nbsp; <sup>2</sup>SDAIA-KFUPM Joint Research Center for Artificial Intelligence
 
 \*Corresponding email: muzammil.behzad@kfupm.edu.sa
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717.svg?logo=github)](https://github.com/BRAIN-Lab-AI/SegVLM)
-[![arXiv](https://img.shields.io/badge/arXiv-2505.19242-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2505.19242)
-[![Python](https://img.shields.io/badge/Python-3.9-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Task](https://img.shields.io/badge/Task-Referring_Segmentation-blueviolet.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[Paper](https://doi.org/10.1016/j.neunet.2026.109721) | [Project Page](https://brain-lab-ai.github.io/SegVLM/) | [Get Started](#quick-start) | [Results](#results)
+
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github)](https://github.com/BRAIN-Lab-AI/SegVLM)
+[![Project Page](https://img.shields.io/badge/Project-Page-1F6FEB)](https://brain-lab-ai.github.io/SegVLM/)
+[![Paper](https://img.shields.io/badge/Paper-Neural%20Networks%202026-6F42C1)](https://doi.org/10.1016/j.neunet.2026.109721)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.19242-B31B1B?logo=arxiv)](https://arxiv.org/abs/2505.19242)
+[![Python](https://img.shields.io/badge/python-3.9-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+
+[![License](https://img.shields.io/badge/License-MIT-2EA44F)](https://opensource.org/licenses/MIT)
+[![Stars](https://img.shields.io/github/stars/BRAIN-Lab-AI/SegVLM?style=social)](https://github.com/BRAIN-Lab-AI/SegVLM)
 
 </div>
 
@@ -210,13 +215,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you find SegVLM useful for your research, please cite our paper:
 
 ```bibtex
-@article{dalaq2025segvlm,
-  title   = {Deformable Attentive Visual Enhancement for Referring Segmentation
-             Using Vision-Language Model},
-  author  = {Dalaq, Alaa S. and Behzad, Muzammil},
-  journal = {arXiv preprint arXiv:2505.19242},
-  year    = {2025},
-  url     = {https://arxiv.org/abs/2505.19242}
+@article{dalaq2026segvlm,
+  title   = {SegVLM: Deformable Attentive Visual Enhancement for Referring Image
+             Segmentation Using Vision-Language Model},
+  author  = {Dalaq, Alaa and Behzad, Muzammil},
+  journal = {Neural Networks},
+  year    = {2026},
+  doi     = {10.1016/j.neunet.2026.109721},
+  url     = {https://doi.org/10.1016/j.neunet.2026.109721}
 }
 ```
 
@@ -227,7 +233,7 @@ We thank King Fahd University of Petroleum and Minerals and the SDAIA-KFUPM JRC 
 
 For questions or collaborations, please contact:
 
-- Alaa S. Dalaq: [g202320570@kfupm.edu.sa]
+- Alaa Dalaq: [g202320570@kfupm.edu.sa]
 - Muzammil Behzad: muzammil.behzad@kfupm.edu.sa
 
 ---
