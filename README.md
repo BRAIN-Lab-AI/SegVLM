@@ -2,9 +2,9 @@
 
 # SegVLM: Deformable Attentive Visual Enhancement for Referring Image Segmentation Using Vision-Language Model
 
-[Alaa S. Dalaq](https://scholar.google.com/citations?user=0qOTVbcAAAAJ&hl=en)<sup>1</sup> and [Muzammil Behzad](https://scholar.google.com.pk/citations?user=nrZ-GGcAAAAJ&hl=en)<sup>1,2</sup>
+[Alaa S. Dalaq](https://scholar.google.com/citations?user=0qOTVbcAAAAJ&hl=en)<sup>1</sup> and [Muzammil Behzad](https://scholar.google.com.pk/citations?user=nrZ-GGcAAAAJ&hl=en)<sup>1,2,*</sup>
 
-<sup>1</sup>KFUPM &nbsp;&nbsp; <sup>2</sup>SDAIA-KFUPM Joint Research Center for Artificial Intelligence
+<sup>1</sup>King Fahd University of Petroleum and Minerals, Saudi Arabia <br> &nbsp;&nbsp; <sup>2</sup>SDAIA-KFUPM Joint Research Center for Artificial Intelligence
 
 \*Corresponding email: muzammil.behzad@kfupm.edu.sa
 
